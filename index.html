@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+
+    <form id="survey-form" class="container">
+        <label for="name" id="name-label"> Name:
+            <input type="text" name="name" id="name" required placeholder="Enter your full name">
+        </label>
+        <label for="email" id="email-label"> Email:
+            <input type="email" name="email" id="email" required title="Email invalido" placeholder="Enter a unique email">
+        </label>
+        <label for="number" id="number-label"> Number:
+            <input type="number" name="number" id="number" pattern="^[0-9]$" title="Número invalido" min="1" max="10" placeholder="Enter your number">
+        </label>
+
+        <select name="dropdown" id="dropdown">
+            <option value="Santo Domingo">Santo Domingo</option>
+            <option value="Santiago">Santiago</option>
+            <option value="San Cristóbal">San Cristóbal</option>
+            <option value="Monseñor Noel">Monseñor Noel</option>
+            <option value="Matria Trinidad Sánchez">María Trinidad Sánchez</option>
+            <option value="Azue">Azua</option>
+        </select>
+        <h2>Selecciona tu sexo:</h2>
+        <div class="form-group">
+            <input type="radio" name="option" id="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="option" id="female" value="famele">
+            <label for="female">Female</label><br>
+            <input type="radio" name="option" id="both" value="both">
+            <label for="both">Both</label>
+        </div>
+        <h2>Selecciona las tecnologías que sabes utilizar:</h2>
+        <div class="form-group">
+            <input type="checkbox" name="menor" id="menor" value="Menor">
+            <label for="menor">HTML</label><br>
+            <input type="checkbox" name="mayor" id="mayor" value="Mayor">
+            <label for="mayor">CSS</label><br>
+            <input type="checkbox" name="envejeciente" id="envejeciente" value="Envejeciente">
+            <label for="envejeciente">JavaScript</label>
+        </div>
+        
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        
+        <input id="submit" type="submit">
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
